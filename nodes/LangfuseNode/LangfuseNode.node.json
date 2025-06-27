@@ -1,6 +1,6 @@
 {
 	"node": "n8n-nodes-langfuse",
-	"nodeVersion": "0.1.0",
+	"nodeVersion": "0.1.1",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Developer Tools"],
 	"resources": {
