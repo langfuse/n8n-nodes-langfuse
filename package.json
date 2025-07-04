@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-langfuse",
+	"name": "@langfuse/n8n-nodes-langfuse",
 	"version": "0.2.0",
 	"description": "Langfuse nodes for n8n",
 	"keywords": [
