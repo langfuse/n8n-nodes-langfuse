@@ -1,6 +1,6 @@
 {
 	"name": "@langfuse/n8n-nodes-langfuse",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"description": "Langfuse nodes for n8n",
 	"keywords": [
 		"n8n-community-node-package"
@@ -9,7 +9,7 @@
 	"homepage": "https://langfuse.com",
 	"author": {
 		"name": "Langfuse",
-		"email": "support@langfuse.com  "
+		"email": "support@langfuse.com"
 	},
 	"repository": {
 		"type": "git",
@@ -33,10 +33,10 @@
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"credentials": [
-			"dist/credentials/LangfuseCredentialsApi.credentials.ts"
+			"dist/credentials/LangfuseApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/LangfuseNode/LangfuseNode.node.ts"
+			"dist/nodes/Langfuse/Langfuse.node.js"
 		]
 	},
 	"devDependencies": {
@@ -49,8 +49,5 @@
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
-	},
-	"dependencies": {
-		"langfuse": "^3.37.6"
 	}
 }

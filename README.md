@@ -22,15 +22,25 @@ npm install @langfuse/n8n-nodes-langfuse
 
 ## Operations
 
-- **Prompt**
-  - Get prompt from [Langfuse Prompt Management](https://langfuse.com/docs/prompts)
+### Get Prompt
+
+This node can be used to get a prompt from [Langfuse Prompt Management](https://langfuse.com/docs/prompts).
+
+Steps
+
+1. Enter the `name` of the prompt
+2. Enter the `label` that identifies the prompt version that you want to fetch. Defaults to "production". Learn more about prompt labels in Langfuse [here](https://langfuse.com/docs/prompts/get-started#labels).
+
+_Example workflow that retrieves the system prompt for the agent from Langfuse:_
+
+![Get Prompt Example Workflow](get_prompt_example_workflow.png)
 
 ## Credentials
 
 To use this node, you need to authenticate with Langfuse. You'll need:
 
-1. A Langfuse account (sign up at [langfuse.com](https://langfuse.com))
-2. API credentials from your Langfuse project settings
+1. A Langfuse account, either [Langfuse Cloud](https://cloud.langfuse.com) or [self-hosted](https://langfuse.com/self-hosting).
+2. API credentials from your Langfuse project settings: hostname, public key, secret key
 
 ## Development
 

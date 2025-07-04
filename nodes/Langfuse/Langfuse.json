@@ -1,0 +1,18 @@
+{
+	"node": "LangFuse",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["AI"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://langfuse.com/docs/api#authentication"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://langfuse.com/docs/prompts/get-started"
+			}
+		]
+	}
+}
