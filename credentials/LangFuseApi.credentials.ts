@@ -1,4 +1,9 @@
-import { ICredentialType, INodeProperties, IAuthenticateGeneric } from 'n8n-workflow';
+import {
+	ICredentialType,
+	INodeProperties,
+	IAuthenticateGeneric,
+	ICredentialTestRequest,
+} from 'n8n-workflow';
 
 export class LangfuseApi implements ICredentialType {
 	name = 'langfuseApi';
@@ -42,6 +47,14 @@ export class LangfuseApi implements ICredentialType {
 				username: '={{$credentials.publicKey}}',
 				password: '={{$credentials.secretKey}}',
 			},
+		},
+	};
+
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: '={{$credentials.host}}',
+			url: '/api/public/projects',
+			method: 'GET',
 		},
 	};
 }
