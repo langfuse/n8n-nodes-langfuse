@@ -1,21 +1,21 @@
 import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
 
-export class LangFuseGetPrompt implements INodeType {
+export class Langfuse implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'LangFuse Get Prompt',
-		name: 'langFuseGetPrompt',
+		displayName: 'Langfuse',
+		name: 'langfuse',
 		icon: 'file:langfuse.svg',
 		group: ['transform'],
 		version: 1,
-		description: 'Fetches a prompt by name from LangFuse',
+		description: 'Fetches a prompt from Langfuse Prompt Management',
 		defaults: {
-			name: 'Get Prompt (LangFuse)',
+			name: 'Get Prompt (Langfuse)',
 		},
 		inputs: [NodeConnectionType.Main],
 		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
-				name: 'langFuseApi',
+				name: 'langfuseApi',
 				required: true,
 			},
 		],
@@ -94,7 +94,8 @@ export class LangFuseGetPrompt implements INodeType {
 						name: 'label',
 						type: 'string',
 						default: 'production',
-						description: 'Deployment label of the prompt version to retrieve (defaults to Production)',
+						description:
+							'Deployment label of the prompt version to retrieve (defaults to Production)',
 						routing: {
 							request: {
 								qs: {
