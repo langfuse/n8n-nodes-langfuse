@@ -77,34 +77,25 @@ export class Langfuse implements INodeType {
 				},
 			},
 			{
-				displayName: 'Additional Fields',
-				name: 'additionalFields',
-				type: 'collection',
-				placeholder: 'Add Field',
-				default: {},
+				displayName: 'Prompt Label',
+				name: 'label',
+				type: 'string',
+				required: true,
+				default: 'production',
+				description: 'Deployment label of the prompt version to retrieve (defaults to Production)',
 				displayOptions: {
 					show: {
 						resource: ['prompt'],
 						operation: ['get'],
 					},
 				},
-				options: [
-					{
-						displayName: 'Label',
-						name: 'label',
-						type: 'string',
-						default: 'production',
-						description:
-							'Deployment label of the prompt version to retrieve (defaults to Production)',
-						routing: {
-							request: {
-								qs: {
-									label: '={{$value}}',
-								},
-							},
+				routing: {
+					request: {
+						qs: {
+							label: '={{$value}}',
 						},
 					},
-				],
+				},
 			},
 		],
 	};
