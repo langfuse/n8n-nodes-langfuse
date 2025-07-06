@@ -33,7 +33,7 @@ Steps
 
 _Example workflow that retrieves the system prompt for the agent from Langfuse:_
 
-![Get Prompt Example Workflow](get_prompt_example_workflow.png)
+![n8n-changelog](https://github.com/user-attachments/assets/4d224c2f-86b6-4ad4-a64a-45c7fe6e3595)
 
 ## Credentials
 
