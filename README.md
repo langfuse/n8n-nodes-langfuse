@@ -14,11 +14,17 @@ This is an n8n community node. It lets you use Langfuse in your n8n workflows.
 
 ## Installation
 
+### Self-hosted n8n
+
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
 ```bash
 npm install @langfuse/n8n-nodes-langfuse
 ```
+
+### n8n Cloud
+
+This is a verified community node. Search for `Langfuse` to use this node in n8n Cloud.
 
 ## Operations
 
